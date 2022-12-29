@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+.grid-container{
+    display: grid;
+    background-color: #161b40;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2;
+    height: 650px;
+}
+.ime-firme{
+    height: 100px;
+    width: 100%;
+    background-color: orange;
+    grid-column: 1/ -1;
+}
+.naslov{
+    height: 100px;
+    width: 100%;
+    background-color: yellow;
+}
+.slika-drvo{
+    height: 100px;
+    width: 100%;
+    background-color: green;
+}
