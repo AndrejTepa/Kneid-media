@@ -106,7 +106,7 @@
                 <p>feel free to Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus dicta inventore accusantium, accusamus recusandae nulla quas, eos optio perspiciatis numquam ducimus consequatur corrupti nobis obcaecati eligendi quasi? Architecto, eum ab.</p>
             </div>
             <div class="c4-sadrzaj-desni">
-                <form  onsubmit="sendEmail()" class="forma">
+                <form class="forma" action="https://formsubmit.co/49ad374e168222c44f794d66a4a92260" method="POST">
                     <div>
                         <input class="inputi" type="text" id="ime" placeholder="Your name" required>
                     </div>
@@ -122,25 +122,41 @@
                     <div>
                         <textarea class="inputi" id="message" placeholder="Write something.." style="height:200px"></textarea>
                     </div>
-                    <input class="submit-button" type="submit">
+                    <div class="submitdugme">
+                        <input class="submit-button" type="submit">
+                    </div>
                 </form>
             </div>
         </div>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!--<script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-                Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : "username",
-            Password : "password",
-            To : 'them@website.com',
-            From : "you@isp.com",
-            Subject : "This is the subject",
-            Body : "And this is the body"
+        function sendEmail(){Email.send({
+            Host : "smtp.gmail.com",
+            Username : "andrej.tepavcevic@prvabeogim.edu.rs",
+            Password : "Micoje123#",
+            To : 'andrej.tepa@gmail.com',
+            From : 'andrej.tepavcevic@prvabeogim.edu.rs',
+            Subject : "NEW CONTACT US FORM",
+            Body : "Ime: " +document.getElementById("ime").value
+            +"<br> Prezime: "+document.getElementById("prezime").value
+            +"<br> Email: "+document.getElementById("email").value
+            +"<br> Kompanija: "+document.getElementById("company").value
+            +"<br> Poruka: "+document.getElementById("message").value
         }).then(
-        message => alert(message)
-        );
-    </script>
-
+            message=>alert(message)
+            );
+    }
+    </script>-->
+<div class="footer-container">
+    <div class="footer-content">
+        <div class="footer-logo-container">
+            <p>KNEID<span class="footer-span-logo">-Media</span></p>
+        </div>
+        <div class="rights">
+            <p>All Rights Reserved</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
