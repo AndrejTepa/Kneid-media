@@ -11,6 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <script src="script.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+   (function(){
+        emailjs.init("cefxEDrKXmqzu5b2l");
+    })();
+    </script>
     <title>Document</title>
 </head>
 <body>
@@ -106,7 +113,7 @@
                 <p>feel free to Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus dicta inventore accusantium, accusamus recusandae nulla quas, eos optio perspiciatis numquam ducimus consequatur corrupti nobis obcaecati eligendi quasi? Architecto, eum ab.</p>
             </div>
             <div class="c4-sadrzaj-desni">
-                <form class="forma" action="https://formsubmit.co/49ad374e168222c44f794d66a4a92260" method="POST">
+                <form class="forma">
                     <div>
                         <input class="inputi" type="text" id="ime" placeholder="Your name" required>
                     </div>
@@ -117,37 +124,18 @@
                         <input class="inputi" type="email" id="email" placeholder="Your mail" required>
                     </div>
                     <div>
-                        <input class="inputi" type="text" id="company" placeholder="Your company (optional)" >
+                        <input class="inputi" type="text" id="company" placeholder="Your company (optional)">
                     </div>
                     <div>
-                        <textarea class="inputi" id="message" placeholder="Write something.." style="height:200px"></textarea>
+                        <textarea class="inputi" id="message" placeholder="Write something.." style="height:200px" required></textarea>
                     </div>
                     <div class="submitdugme">
-                        <input class="submit-button" type="submit">
+                        <input class="submit-button" onsubmit="SendMail()" type="submit">
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <!--<script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){Email.send({
-            Host : "smtp.gmail.com",
-            Username : "andrej.tepavcevic@prvabeogim.edu.rs",
-            Password : "Micoje123#",
-            To : 'andrej.tepa@gmail.com',
-            From : 'andrej.tepavcevic@prvabeogim.edu.rs',
-            Subject : "NEW CONTACT US FORM",
-            Body : "Ime: " +document.getElementById("ime").value
-            +"<br> Prezime: "+document.getElementById("prezime").value
-            +"<br> Email: "+document.getElementById("email").value
-            +"<br> Kompanija: "+document.getElementById("company").value
-            +"<br> Poruka: "+document.getElementById("message").value
-        }).then(
-            message=>alert(message)
-            );
-    }
-    </script>-->
 <div class="footer-container">
     <div class="footer-content">
         <div class="footer-logo-container">
