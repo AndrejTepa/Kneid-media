@@ -7,7 +7,19 @@ function SendMail(){
         message: document.getElementById ("message").value
 
     }
-    emailjs.send("service_4qfy0dj","template_utr8kft",params).then(function (res){
-        alert("Succes! " + res.status);
-    })
+    if (document.getElementById("ime").value=="" || document.getElementById("prezime").value =="" || document.getElementById ("email").value=="" || document.getElementById ("message").value=="")
+        {
+            alert("You didnt enter all credentials")
+        }
+        else{
+            emailjs.send("service_4qfy0dj","template_utr8kft",params).then(function (res){
+                alert("Email has been sent! ");
+            })
+            document.getElementById("ime").value = "";
+            document.getElementById("prezime").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("company").value = "";
+            document.getElementById("message").value = "";
+            
+        }
 }
