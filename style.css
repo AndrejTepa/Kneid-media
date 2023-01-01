@@ -436,3 +436,114 @@ body{
         font-family: 'Abel', sans-serif;
         margin-top: -30px;
     }
+    @media only screen and (max-width: 1350px){
+        .top-container{
+            height: fit-content;
+        }
+        .main-container{
+            width: 80%;
+            height: fit-content;
+        }
+        .why-chose-us-container{
+            width: 80%;
+            height: fit-content;
+        }
+        .what-we-offer-container{
+            height: fit-content;
+        }
+        .what-we-offer-question{
+            width: 80%;
+        }
+        .what-we-offer-head{
+            width: 80%;
+        }
+        .what-we-offer-main{
+            width: 80%;
+        }
+        .flex-container-4{
+            width: 80%;
+            height: fit-content;
+        }
+        .button{
+            height: fit-content;
+        }
+    }
+
+    @media only screen and (max-width: 720px){
+        .logo-container{
+            align-self: center;
+            width: 50%;
+        }
+        .main-container{
+            flex-direction: column;
+            width: 100%;
+            justify-items: center;
+            align-items: center;
+        }
+        .tech-tree-container{
+            display: none;
+        }
+        .c4-sadrzaj{
+            flex-direction: column;
+            width: 100%;
+        }
+            .c4-sadrzaj-desni{
+                width: 90%;
+            }
+            .c4-sadrzaj-levi{
+                width: 90%;
+            }
+        .why-chose-us-container{
+            flex-direction: column;
+        }
+            .why-us-container{
+                width: 100%;
+                flex: 1;
+                max-width: 100%;
+            }
+            .stats-container{
+                width: 100%;
+                flex: 2;
+                max-width: 100;
+                margin: 0%;
+                align-items: center;
+
+            }
+            .stats-container h2{
+                font-size: 40px;
+            }
+            .statistika{
+                font-size: 40px;
+            }
+                .clients-helped{
+                    width: 100%;
+                    margin: 0%;
+                }
+                .our-services{
+                    width: 100%;
+                    margin: 0%;
+                }
+        .what-we-offer-main{
+             flex-direction: column;      
+             height: fit-content; 
+             align-items: center;
+        } 
+        .what-we-offer-left{
+            width:100%;
+            padding-top: 5px;
+        }
+        .what-we-offer-right{
+            width:100%;
+        }
+            .what-we-offer-question{
+                width: 100%;
+                align-self: center;
+                text-align: center;
+            }
+            .what-we-offer-head{
+                width: 100%;
+                align-self: center;
+                text-align: center;
+            }
+                 
+    }
