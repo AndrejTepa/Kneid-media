@@ -317,7 +317,7 @@ body{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        height: 680px;
+        height: fit-content;
         align-items: center;
     }
         .c4-sadrzaj-levi{
@@ -436,6 +436,7 @@ body{
         font-family: 'Abel', sans-serif;
         margin-top: -30px;
     }
+
     @media only screen and (max-width: 1350px){
         .top-container{
             height: fit-content;
@@ -471,8 +472,16 @@ body{
 
     @media only screen and (max-width: 720px){
         .logo-container{
-            align-self: center;
-            width: 50%;
+            text-align: center;
+        }
+        .dugme1{
+            margin-bottom: 50px;
+        }
+        .who-are-we-head{
+            font-size: 35px;
+        }
+        .who-are-we-sub-text {
+            display: none;
         }
         .main-container{
             flex-direction: column;
@@ -480,12 +489,12 @@ body{
             justify-items: center;
             align-items: center;
         }
-        .who-are-we{
-            margin-bottom: 100px;
-        }
         .tech-tree-container{
             display: none;
         }
+        .dugmence{
+            margin-left: 10%;
+         }
         .c4-sadrzaj{
             flex-direction: column;
             width: 100%;
@@ -498,11 +507,13 @@ body{
             }
         .why-chose-us-container{
             flex-direction: column;
+            margin-top: 30px;
         }
             .why-us-container{
                 width: 100%;
                 flex: 1;
                 max-width: 100%;
+                order: 1;
             }
             .stats-container{
                 width: 100%;
@@ -510,13 +521,21 @@ body{
                 max-width: 100;
                 margin: 0%;
                 align-items: center;
+                order: 2;
+                flex-direction: row;
+                align-content: space-around;
+                gap: 10%px;
 
             }
             .stats-container h2{
-                font-size: 40px;
+                font-size: 25px;
             }
             .statistika{
-                font-size: 40px;
+                font-size: 30px;
+            }
+            .why-chose-us-container{
+                margin-top: 0;
+                margin-bottom: 0;
             }
                 .clients-helped{
                     width: 100%;
@@ -547,6 +566,9 @@ body{
                 width: 100%;
                 align-self: center;
                 text-align: center;
+            }
+            .main-container{
+                width: 100%;
             }
                  
     }
