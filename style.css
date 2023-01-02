@@ -67,7 +67,6 @@ body{
             justify-content: center;
         }
             .who-are-we-head{
-                flex:1;
                 text-align: center;
                 color: white;
                 font-size: 40px;
@@ -468,11 +467,27 @@ body{
         .button{
             height: fit-content;
         }
+        .dugme1{
+            margin-bottom: 50px;
+        }
+        .dugme2{
+            margin-bottom: 50px;
+        }
     }
 
     @media only screen and (max-width: 720px){
         .logo-container{
             text-align: center;
+        }
+        .footer-content{ width:100%; text-align:center;}
+        .who-are-we{
+            width: 100%;
+            margin: 0px;
+        }
+
+        .top-container{
+            width: 100%;
+            margin: 0;
         }
         .dugme1{
             margin-bottom: 50px;
@@ -493,7 +508,7 @@ body{
             display: none;
         }
         .dugmence{
-            margin-left: 10%;
+            align-items: center;
          }
         .c4-sadrzaj{
             flex-direction: column;
@@ -525,6 +540,7 @@ body{
                 flex-direction: row;
                 align-content: space-around;
                 gap: 10%px;
+                justify-content: center;
 
             }
             .stats-container h2{
@@ -570,5 +586,34 @@ body{
             .main-container{
                 width: 100%;
             }
-                 
+            .why-us-container{
+                text-align: center;
+            }
+            .nebitan
+            {
+                margin-bottom: 30px;
+            }
+            .dugmence{
+                align-self: center;
+            }
+            .who-are-we-sub-text{
+                margin: 0;
+                width: 100%;
+            }
+            .main-container{
+                margin: 0;
+                width: 100%;
+            }
+            .who-are-we-head{
+                margin:0;
+                width: 100%;
+                margin-bottom: 40px;
+            }
+            .who-are-we{
+                width: 100%;
+            }
+            .who-are-we-container{
+                max-width: 100%;
+                width: 80%;
+            }     
     }
