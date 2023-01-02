@@ -480,6 +480,9 @@ body{
             justify-items: center;
             align-items: center;
         }
+        .who-are-we{
+            margin-bottom: 100px;
+        }
         .tech-tree-container{
             display: none;
         }
