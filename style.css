@@ -505,11 +505,11 @@ body{
             align-items: center;
         }
         .tech-tree-container{
-            display: none;
+            display: none;  
         }
         .dugmence{
             align-items: center;
-            margin: 0;
+            margin: 0px;
          }
         .c4-sadrzaj{
             flex-direction: column;
@@ -596,6 +596,7 @@ body{
             }
             .dugmence{
                 align-self: center;
+                margin: 0px;
             }
             .who-are-we-sub-text{
                 margin: 0;
@@ -616,5 +617,18 @@ body{
             .who-are-we-container{
                 max-width: 100%;
                 width: 80%;
-            }     
+            }
+            .what-we-offer-left{
+                align-self: center;
+                text-align: center;
+            }
+            .what-we-offer-container{
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+            .what-we-offer-head{
+                flex-wrap: wrap;
+                width: 100%;
+                font-size: 40px;
+            }
     }

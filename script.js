@@ -20,6 +20,5 @@ function SendMail(){
             document.getElementById("email").value = "";
             document.getElementById("company").value = "";
             document.getElementById("message").value = "";
-            
         }
 }
