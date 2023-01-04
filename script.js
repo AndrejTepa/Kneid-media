@@ -7,12 +7,12 @@ function SendMail(){
         message: document.getElementById ("message").value
 
     }
-    if (document.getElementById("ime").value=="" || document.getElementById("prezime").value =="" || document.getElementById ("email").value=="" || document.getElementById ("message").value=="")
+    if (document.getElementById("ime").value=="" || document.getElementById("prezime").value ==""   ||  document.getElementById ("email").value=="" || document.getElementById ("message").value=="")
         {
             alert("You didnt enter all credentials")
         }
         else{
-            emailjs.send("service_4rzorjl","template_utr8kft",params).then(function (res){
+            emailjs.send("service_u5iwubl","template_yx07c45",params).then(function (res){
                 alert("Email has been sent! ");
             })
             document.getElementById("ime").value = "";
@@ -20,5 +20,6 @@ function SendMail(){
             document.getElementById("email").value = "";
             document.getElementById("company").value = "";
             document.getElementById("message").value = "";
+
         }
 }
