@@ -12,7 +12,7 @@ function SendMail(){
             alert("You didnt enter all credentials")
         }
         else{
-            emailjs.send("service_4qfy0dj","template_utr8kft",params).then(function (res){
+            emailjs.send("service_4rzorjl","template_utr8kft",params).then(function (res){
                 alert("Email has been sent! ");
             })
             document.getElementById("ime").value = "";
