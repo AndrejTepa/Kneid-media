@@ -190,25 +190,6 @@ body{
     font-family: 'Abel';
     background-color: #161b40;
 }
-.txt1{
-    height: 50px;
-    width: 100%;
-    background-color: red;
-}
-.txt2{
-    height: 50px;
-    width: 100%;
-    background-color: green;
-}
-.txt3{
-    height: 300;
-    width: 60%;
-    margin: auto;
-    flex-flow: row nowrap;
-    align-items: stretch;
-    justify-content: flex-start;
-    background-color: rosybrown;
-}
 .inner-offer1{
     height: 50px;
     width: 40%;
@@ -433,7 +414,11 @@ body{
         color: white;
         font-size: 12px;
         font-family: 'Abel', sans-serif;
-        margin-top: -30px;
+        margin-top: -40px;
+    }
+    .social{
+        display: inline-block;
+        margin-top: 20px;
     }
 
     @media only screen and (max-width: 1350px){
