@@ -142,7 +142,7 @@ body{
         max-width: 50%;
         background-color: white;
         flex-wrap: wrap;
-        align-items: stretch;
+        
         justify-content: center;
     }
     .why-us-container p{
@@ -164,7 +164,6 @@ body{
             text-decoration: none;
             cursor: pointer;
             border-radius: 40px;
-            width: auto;
             font-family: "Abel";
         }
             .button-speak-to-us{
@@ -336,7 +335,6 @@ body{
                 margin-bottom: 10px;
                 display: flex;
                 flex-flow: column nowrap;
-            
             }
                 .inputi{
                     color:#161b40;
@@ -420,6 +418,16 @@ body{
         display: inline-block;
         margin-top: 20px;
     }
+    .button{
+        transition: transform .2s;
+
+    }
+    .button:hover{
+        transform: scale(1.05);
+    }
+    .alt-what-we-offer{
+        align-items: center;
+    }
 
     @media only screen and (max-width: 1350px){
         .top-container{
@@ -461,8 +469,13 @@ body{
     }
 
     @media only screen and (max-width: 720px){
-        .logo-container{
+        .logo-container p{
+            margin-left: 0;
+            align-self: center;
             text-align: center;
+        }
+        #ajoj{
+            text-align: left;
         }
         .footer-content{ width:100%; text-align:center;}
         .who-are-we{
@@ -492,16 +505,13 @@ body{
         .tech-tree-container{
             display: none;  
         }
-        .dugmence{
-            align-items: center;
-            margin: 0px;
-         }
         .c4-sadrzaj{
             flex-direction: column;
             width: 100%;
         }
             .c4-sadrzaj-desni{
                 width: 90%;
+                margin-right: 0;
             }
             .c4-sadrzaj-levi{
                 width: 90%;
@@ -525,7 +535,7 @@ body{
                 order: 2;
                 flex-direction: row;
                 align-content: space-around;
-                gap: 10%px;
+                gap: 10%;
                 justify-content: center;
 
             }
@@ -555,9 +565,12 @@ body{
         .what-we-offer-left{
             width:100%;
             padding-top: 5px;
+            width: 80%;
+            text-align: center;
         }
         .what-we-offer-right{
-            width:100%;
+            width:80%;
+            margin-left: 0;
         }
             .what-we-offer-question{
                 width: 100%;
@@ -579,10 +592,6 @@ body{
             {
                 margin-bottom: 30px;
             }
-            .dugmence{
-                align-self: center;
-                margin: 0px;
-            }
             .who-are-we-sub-text{
                 margin: 0;
                 width: 100%;
@@ -603,17 +612,24 @@ body{
                 max-width: 100%;
                 width: 80%;
             }
-            .what-we-offer-left{
-                align-self: center;
-                text-align: center;
-            }
             .what-we-offer-container{
                 flex-wrap: wrap;
                 flex-direction: row;
+                
             }
             .what-we-offer-head{
                 flex-wrap: wrap;
                 width: 100%;
                 font-size: 40px;
+            }
+            .forma{
+                align-items: auto;
+            }
+            .lista{
+                margin-left: 0;
+            }
+            .dugmence{
+                margin-top: 0px;
+                margin-left: 0px;
             }
     }
