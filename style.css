@@ -98,6 +98,7 @@ body{
     font-family: 'Abel';
     margin-top: 120px;
     gap: 100px;
+    margin-bottom: 100px;
 }
     .stats-container{
         display: flex;
@@ -179,6 +180,36 @@ body{
                 padding: 0px;
                 vertical-align: middle;
             }
+.importance-container{
+    display:flex;
+    flex-direction: column;
+    font-family: "Abel";
+    width: 60%;
+    margin: auto;
+    color: #161b40;
+}
+.importance-naslov{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 0;
+}
+.importance-sadrzaj{
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    align-items: center;
+    height: 450px;
+}
+.importance-right{
+    
+}
+.importance-pic{
+    height: 500px;
+    width:  500px;
+}
+.importance-left{
+}
 .offer-container{
     margin-top: 120px;
     display: flex;
@@ -206,19 +237,17 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
-    margin-bottom: 100px;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     height: 600px;
     font-family: 'Abel';
-    background-color: #161b40;
 }
     .what-we-offer-question{
         width: 60%;
         height: 50px;
         font-size: 30px;
-        color: white;
+        color: #161b40;
         font-weight: bolder;
         line-height: 0px;
         margin-bottom: -20px;
@@ -228,7 +257,7 @@ body{
         width: 60%;
         height: 70px;
         font-size: 50px;
-        color: #43bee5;
+        color: #161b40;
         font-weight: bolder;
         line-height: 0px;
 
@@ -241,7 +270,7 @@ body{
     }
     .what-we-offer-main p{
         font-size: 30px;
-        color: white;
+        color: #161b40;
     }
         .what-we-offer-left{
             flex: 1;
@@ -258,7 +287,7 @@ body{
             }
             .lista{
                 list-style-image: url(icons8-cancel-20.png);
-                color: white;
+                color: #161b40;
                 font-size: 22px;
                 font-weight: bold;
                 margin-left: 10%;
