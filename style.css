@@ -187,12 +187,16 @@ body{
     width: 60%;
     margin: auto;
     color: #161b40;
+    margin-top: 100px;
+    background-color: #161b40;
+    border-radius: 25px;
 }
 .importance-naslov{
     text-align: center;
     font-size: 50px;
     font-weight: bold;
     line-height: 0;
+    color: #f40058;
 }
 .importance-sadrzaj{
     display: flex;
@@ -202,6 +206,8 @@ body{
     height: 450px;
 }
 .importance-right{
+    color: white;
+    padding: 15px;
     
 }
 .importance-pic{
@@ -242,12 +248,13 @@ body{
     justify-content: center;
     height: 600px;
     font-family: 'Abel';
+    background-color: #161b40;
 }
     .what-we-offer-question{
         width: 60%;
         height: 50px;
         font-size: 30px;
-        color: #161b40;
+        color: white;
         font-weight: bolder;
         line-height: 0px;
         margin-bottom: -20px;
@@ -257,7 +264,7 @@ body{
         width: 60%;
         height: 70px;
         font-size: 50px;
-        color: #161b40;
+        color: #43bee5;
         font-weight: bolder;
         line-height: 0px;
 
@@ -270,7 +277,7 @@ body{
     }
     .what-we-offer-main p{
         font-size: 30px;
-        color: #161b40;
+        color: white;
     }
         .what-we-offer-left{
             flex: 1;
@@ -287,7 +294,7 @@ body{
             }
             .lista{
                 list-style-image: url(icons8-cancel-20.png);
-                color: #161b40;
+                color: white;
                 font-size: 22px;
                 font-weight: bold;
                 margin-left: 10%;
@@ -453,6 +460,44 @@ body{
     }
     .alt-what-we-offer{
         align-items: center;
+    }
+    .operate-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        font-family: Abel;
+        background-color: #161b40;
+        margin-bottom:150px ;
+    }
+    .operate-title{
+        width: 60%;
+        margin: auto;
+        font-size: 50px;
+        color: #43bee5;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 100px;
+    }
+    .operate-body{
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        font-size:25px;
+        color: white;
+        align-items: center;
+        margin-top: -50px;
+    }
+    .operate-body-left{
+        width: 40%;
+    }
+    .operate-body-right{
+        width: 60%;
+    }
+    .funnel-slika{
+        height: 500px;
+        width: 500px;
     }
 
     @media only screen and (max-width: 1350px){
