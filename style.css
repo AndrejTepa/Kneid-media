@@ -190,6 +190,7 @@ body{
     margin-top: 100px;
     background-color: #161b40;
     border-radius: 25px;
+    flex-wrap: wrap;
 }
 .importance-naslov{
     text-align: center;
@@ -208,13 +209,16 @@ body{
 .importance-right{
     color: white;
     padding: 15px;
+    width: 60%;
     
 }
 .importance-pic{
-    height: 500px;
-    width:  500px;
+    height: 400px;
+    width:  400px;
 }
 .importance-left{
+    width: 40%;
+    margin-left: 2%;
 }
 .offer-container{
     margin-top: 120px;
@@ -477,7 +481,7 @@ body{
         color: #43bee5;
         font-weight: bold;
         text-align: left;
-        padding-left: 100px;
+        padding-left: 6%;
     }
     .operate-body{
         width: 60%;
@@ -490,16 +494,27 @@ body{
         margin-top: -50px;
     }
     .operate-body-left{
-        width: 40%;
+        width: 60%;
     }
     .operate-body-right{
-        width: 60%;
+        width: 40%;
     }
     .funnel-slika{
         height: 500px;
         width: 500px;
     }
-
+    @media only screen and (max-width: 1360px)
+    {
+        .importance-left{
+           
+        }
+        .importance-right{
+            
+        }
+        .importance-container{
+            width: 80%;
+        }
+    }
     @media only screen and (max-width: 1350px){
         .top-container{
             height: fit-content;
@@ -537,6 +552,55 @@ body{
         .dugme2{
             margin-bottom: 50px;
         }
+        .operate-container{
+            height: fit-content;
+        }
+    }
+    @media only screen and (max-width: 1200px){
+        .importance-left{
+            display: none;
+         }
+         .importance-right{
+             width: 100%;
+             margin: auto;
+         }
+         .importance-container{
+             width: 90%;
+         }
+         .importance-sadrzaj{
+             margin-right:5% ;
+             margin-left: 5%;
+         }
+    } 
+    @media only screen and (max-width:950px)
+    {
+        .c4-sadrzaj{
+            flex-direction: column;
+            width: 100%;
+        }
+            .c4-sadrzaj-desni{
+                width: 90%;
+                margin-right: 0;
+            }
+            .c4-sadrzaj-levi{
+                width: 90%;
+            }
+            .operate-container{
+                margin-top: 100px;
+            }
+            .operate-body-right{
+                display: none;
+            }
+            .operate-body-left{
+                width: 100%;
+            }
+            .operate-body{
+                width: 80%;
+            }
+            .operate-title{
+                text-align: center;
+                padding: 0;
+            }
     }
 
     @media only screen and (max-width: 720px){
@@ -703,4 +767,34 @@ body{
                 margin-top: 0px;
                 margin-left: 0px;
             }
+            .importance-naslov{
+                line-height:normal;
+            }
+            .importance-sadrzaj{
+                
+            }
+            .operate-body{
+                font-size: 22px;
+            }
+            #ajoj{
+                font-size: 25px;
+            }
+            .what-we-offer-right p {
+                font-size: 25px;
+            }
+    }
+    @media only screen and (max-width:560px)
+    {
+        .importance-sadrzaj{
+            font-size: 21px;
+            padding: 10%;
+            margin-bottom: 150px;
+        }
+        .importance-right{
+            padding: 0;
+        }
+        .importance-naslov{
+            line-height: normal;
+            margin-bottom: -40px;
+        }
     }
